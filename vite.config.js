@@ -1,8 +1,7 @@
 import tailwindcss from '@tailwindcss/vite';
 import { tanstackRouter } from '@tanstack/router-plugin/vite';
-import devtools from 'solid-devtools/vite';
+import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
-import solid from 'vite-plugin-solid';
 import * as tsconf from './tsconfig.json';
 import * as viteValues from './vite.config.values.json';
 
@@ -18,12 +17,11 @@ export default defineConfig({
   resolve: { alias },
   plugins: [
     tailwindcss(),
-    devtools(),
     tanstackRouter({
-      target: 'solid',
+      target: 'react',
       routesDirectory: viteValues.tanstackRoutesDir,
       generatedRouteTree: viteValues.tanstackGenRouteTree,
     }),
-    solid(),
+    react(),
   ],
 });

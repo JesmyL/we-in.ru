@@ -1,10 +1,8 @@
-import { RouterProvider, createRouter } from '@tanstack/solid-router';
-import 'solid-devtools';
-import { render } from 'solid-js/web';
-import { routeTree } from '../apps/kabinet-uzi-crimea/routeTree.gen';
-import './styles.css';
+import { createRouter, RouterProvider } from '@tanstack/react-router';
+import { createRoot } from 'react-dom/client';
+import { routeTree } from '../sub/kabinet-uzi-crimea/routeTree.gen';
+import './app.css';
 
-// Set up a Router instance
 const router = createRouter({
   routeTree,
   defaultPreload: 'intent',
@@ -12,8 +10,7 @@ const router = createRouter({
   scrollRestoration: true,
 });
 
-// Register things for typesafety
-declare module '@tanstack/solid-router' {
+declare module '@tanstack/react-router' {
   interface Register {
     router: typeof router;
   }
@@ -22,5 +19,5 @@ declare module '@tanstack/solid-router' {
 const rootElement = document.getElementById('app')!;
 
 if (!rootElement.innerHTML) {
-  render(() => <RouterProvider router={router} />, rootElement);
+  createRoot(rootElement).render(<RouterProvider router={router} />);
 }

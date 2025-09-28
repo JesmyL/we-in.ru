@@ -25,7 +25,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {}
 
-declare module '@tanstack/solid-router' {
+declare module '@tanstack/react-router' {
   interface FileRoutesByPath {}
 }
 

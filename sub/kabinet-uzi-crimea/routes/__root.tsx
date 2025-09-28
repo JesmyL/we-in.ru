@@ -1,5 +1,5 @@
 import { UziApp } from '$uzi/app/App';
-import { Outlet, createRootRoute } from '@tanstack/solid-router';
+import { createRootRoute, Outlet } from '@tanstack/react-router';
 
 export const Route = createRootRoute({
   component: RootComponent,
