@@ -1,4 +1,4 @@
 {
-  "tanstackRoutesDir": "./apps/kabinet-uzi-crimea/routes",
-  "tanstackGenRouteTree": "./apps/kabinet-uzi-crimea/routeTree.gen.ts"
+  "tanstackRoutesDir": "./sub/kabinet-uzi-crimea/routes",
+  "tanstackGenRouteTree": "./sub/kabinet-uzi-crimea/routeTree.gen.ts"
 }

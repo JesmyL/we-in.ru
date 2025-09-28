@@ -18,7 +18,7 @@ const result = process.argv.some(proKey => {
   (async () => {
     if (project == null) return;
 
-    const proDirPath = `./apps/${project.name}`;
+    const proDirPath = `./sub/${project.name}`;
     const proGenRouteTreeFilePath = `${proDirPath}/routeTree.gen`;
 
     viteValues.tanstackRoutesDir = `${proDirPath}/routes`;

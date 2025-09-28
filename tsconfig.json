@@ -2,16 +2,17 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "#ui/*": ["./src/shared/components/ui/*"],
       "#shared/*": ["./src/shared/*"],
 
-      "$uzi/app/*": ["./apps/kabinet-uzi-crimea/01-app/*"],
-      "$uzi/processes/*": ["./apps/kabinet-uzi-crimea/02-processes/*"],
-      "$uzi/pages/*": ["./apps/kabinet-uzi-crimea/03-pages/*"],
-      "$uzi/widgets/*": ["./apps/kabinet-uzi-crimea/04-widgets/*"],
-      "$uzi/features/*": ["./apps/kabinet-uzi-crimea/05-features/*"],
-      "$uzi/entities/*": ["./apps/kabinet-uzi-crimea/06-entities/*"],
-      "$uzi/basis/*": ["./apps/kabinet-uzi-crimea/07-basis/*"],
-      "$uzi/*": ["./apps/kabinet-uzi-crimea/*"]
+      "$uzi/app/*": ["./sub/kabinet-uzi-crimea/01-app/*"],
+      "$uzi/processes/*": ["./sub/kabinet-uzi-crimea/02-processes/*"],
+      "$uzi/pages/*": ["./sub/kabinet-uzi-crimea/03-pages/*"],
+      "$uzi/widgets/*": ["./sub/kabinet-uzi-crimea/04-widgets/*"],
+      "$uzi/features/*": ["./sub/kabinet-uzi-crimea/05-features/*"],
+      "$uzi/entities/*": ["./sub/kabinet-uzi-crimea/06-entities/*"],
+      "$uzi/basis/*": ["./sub/kabinet-uzi-crimea/07-basis/*"],
+      "$uzi/*": ["./sub/kabinet-uzi-crimea/*"]
     },
 
     "jsx": "preserve",

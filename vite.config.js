@@ -1,3 +1,4 @@
+import tailwindcss from '@tailwindcss/vite';
 import { tanstackRouter } from '@tanstack/router-plugin/vite';
 import devtools from 'solid-devtools/vite';
 import { defineConfig } from 'vite';
@@ -16,6 +17,7 @@ Object.entries(tsConfig.compilerOptions.paths).forEach(([aliasKey, [path]]) => {
 export default defineConfig({
   resolve: { alias },
   plugins: [
+    tailwindcss(),
     devtools(),
     tanstackRouter({
       target: 'solid',
