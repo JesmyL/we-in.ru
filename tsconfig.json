@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#shared/*": ["./src/shared/*"],
+
+      "$uzi/app/*": ["./apps/kabinet-uzi-crimea/01-app/*"],
+      "$uzi/processes/*": ["./apps/kabinet-uzi-crimea/02-processes/*"],
+      "$uzi/pages/*": ["./apps/kabinet-uzi-crimea/03-pages/*"],
+      "$uzi/widgets/*": ["./apps/kabinet-uzi-crimea/04-widgets/*"],
+      "$uzi/features/*": ["./apps/kabinet-uzi-crimea/05-features/*"],
+      "$uzi/entities/*": ["./apps/kabinet-uzi-crimea/06-entities/*"],
+      "$uzi/basis/*": ["./apps/kabinet-uzi-crimea/07-basis/*"],
+      "$uzi/*": ["./apps/kabinet-uzi-crimea/*"]
+    },
+
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+
+    "esModuleInterop": true,
+    "isolatedModules": true,
+
+    "skipLibCheck": true,
+    "strict": true
+  }
+}
