@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "#ui/*": ["./src/shared/components/ui/*"],
+      "$ui/*": ["./src/shared/ui/*"],
       "#shared/*": ["./src/shared/*"],
 
       "$uzi/app/*": ["./sub/kabinet-uzi-crimea/01-app/*"],

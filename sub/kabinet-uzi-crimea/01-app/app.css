@@ -1,0 +1,7 @@
+.kabinet-uzi-crimea {
+  --primary: #46b6a4;
+  --primary-foreground: oklch(0.985 0.001 106.423);
+}
+
+.dark .kabinet-uzi-crimea {
+}
